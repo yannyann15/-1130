@@ -4,16 +4,16 @@ public class Main {
 
     public static void main(String[] args) {
         // write your code here
+        Student s1 = new Student();
+        Student s2 = new Student();
 
-        Shop s1 = new Shop();
-        Shop s2 = new Shop();
-        s1.name = "パン屋";
-        s1.sale = 100000;
-        s2.name = "洋服屋";
-        s2.sale = 150000;
-        System.out.println(s1.name + "売上" + s1.sale);
-        System.out.println(s2.name + "売上" + s2.sale);
+        s1.name = "タロウ";
+        s1.score = 75;
+        s2.name = "ハナコ";
+        s2.score = 80;
 
+        s1.showScore();
+        s2.showScore();
 
     }
 
