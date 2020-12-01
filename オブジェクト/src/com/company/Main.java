@@ -1,22 +1,16 @@
 package com.company;
 
 public class Main {
+    public static void main(String[] args) {
 
-    Student[] students = new Student[3];
     //ここにプログラムを書きます。
-    students[0]=new Student("タロウ",80,75,90);
-    students[1]=new Student("ハナコ",90,70,80);
-    students[2]=new Student("ジロウ");
+    Daikei d1 = new Daikei(12,8,5);
+    Daikei d2 = new Daikei(8,4,10);
+
+        System.out.println(d1.getMenseki());
+        System.out.println(d2.getMenseki());
 
 
-
-
-
-    System.out.println("成績表");
-    for(int i = 0; i < students.length; i++) {
-        //ここにプログラムを書きます。
-     students[i].show();
-    }
 
     }
 
