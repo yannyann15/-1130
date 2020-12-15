@@ -3,15 +3,31 @@ package com.company;
 
 public class Main {
     public static void main(String args[]) {
-        Clock clock = new Clock("10:30");
-        clock.showTime();
+        Cooler cooler = new Cooler(28);
+        AirConditioner aircon = new AirConditioner(28);
 
-        AlarmClock alarmClock = new AlarmClock("14:30");
-        alarmClock.showTime();
-        alarmClock.setAlarm("14:00");
-        alarmClock.alarm();
-        alarmClock.setAlarm("14:30");
-        alarmClock.alarm();
+        //冷房の設定温度を27度にする
+        cooler.setGoalTemp(27);
+        //冷房が温度調節をする
+        cooler.adjust();
+        //冷房が温度調節をする
+        cooler.adjust();
+
+        //エアコンの設定温度を27度にする
+        aircon.setGoalTemp(27);
+        //エアコンが温度調節をする
+        aircon.adjust();
+        //エアコンの設定温度を28度にする
+        aircon.setGoalTemp(28);
+        //エアコンが温度調節をする
+        aircon.adjust();
+        //エアコンが温度調節をする
+        aircon.adjust();
+
+
+
+
+
+
     }
 }
-
